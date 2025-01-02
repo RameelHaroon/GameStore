@@ -1,1 +1,29 @@
-GET http://localhost:5128
+GET http://localhost:5128/games
+
+###
+GET http://localhost:5128/games/9
+
+###
+POST http://localhost:5128/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genre": "Kids and Family",
+    "price": 20.99,
+    "releaseDate": "2000-12-09"
+}
+
+###
+PUT http://localhost:5128/games/1
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genre": "Kids and Family",
+    "price": 20.99,
+    "releaseDate": "2000-12-09"
+}
+
+###
+DELETE  http://localhost:5128/games/1
